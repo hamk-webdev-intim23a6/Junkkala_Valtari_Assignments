@@ -31,16 +31,16 @@ except:
 
 while True:
     print("Input a word to search or nothing to exit.")
-    inputString = input("Input: ").lower().strip()
-    if inputString == "":
+    input_string = input("Input: ").lower().strip()
+    if input_string == "":
         break
 
-    if inputString in dictionary:
-        print(f"{inputString} = {dictionary[inputString]}")
+    if input_string in dictionary:
+        print(f"{input_string} = {dictionary[input_string]}")
     else:
-        print(f"{inputString} was not found in dictionary. Please input a translation.")
+        print(f"{input_string} was not found in dictionary. Please input a translation.")
         translation = input("Translation: ").lower().strip()
-        dictionary[inputString] = translation
+        dictionary[input_string] = translation
         try:
                 file = open("dictionary.json", "w", encoding="utf-8")
                 json.dump(dictionary, file)
