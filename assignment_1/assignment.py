@@ -1,5 +1,3 @@
-import json
-
 '''
     Dear Teacher
 
@@ -11,6 +9,8 @@ import json
     code to be written in the same order as it is executed. I believe that with
     the context of the assignment this code is very readable.
 '''
+
+import json
 
 dictionary = {
     "duck": "ankka",
